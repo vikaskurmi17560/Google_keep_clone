@@ -1,0 +1,60 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs
+*.log
+
+# Environment Variables
+.env
+
+# Temporary files
+*.tmp
+*.swp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# IDEs/Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Build directories
+dist/
+build/
+out/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Dependencies
+vendor/
+composer.lock
+
+# Database
+*.sqlite3
+*.db
+*.sql
