@@ -1,20 +1,33 @@
 const mongoose=require("mongoose");
 const todo_schema=new mongoose.Schema({
     title:{
-       type:String,
-       required:true,
-
-    },
-    completed:{
-      type:Boolean,
-    },
-    updated:{
-     
+        type:String,
+        required:true,
     },
     content:{
-
+        type:String,
+        required:true,
     },
-    deadline:{
-
+    labels:{
+        type:[String],
+        default:[]
     },
+    background_color:{
+        type:String
+    },
+    pinned:{
+        type:Boolean,
+        default:false
+    },
+    completed:{
+        type:Boolean,
+        default:false
+    },
+    user_id:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'User',
+        required:true,
+    }
 })
+const todo = mongoose.model('todo', todo_schema)
+module.exports=todo;
